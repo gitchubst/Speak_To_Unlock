@@ -10,7 +10,7 @@ chrome.runtime.onInstalled.addListener(() => {
       "x.com"
     ],
     requiredPhrase: "I'm an addict",
-    requiredLevel: 50
+    requiredLevel: 25
   };
 
   chrome.storage.local.get(Object.keys(defaultConfig), (result) => {
