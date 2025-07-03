@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Speak to unlock: Focus - Site Blocker - No Distractions - Productivity",
+  "name": "Talk to unlock: Focus - Site Blocker - No Distractions - Productivity",
   "version": "1.0",
-  "description": "Speak to unlock with a voice-activated site blocker. Block distractions, reduce screen time, and improve productivity.",
+  "description": "Talk to unlock with a voice-activated site blocker. Block distractions, reduce screen time, and improve productivity.",
   "permissions": [
     "storage",
     "scripting",
@@ -28,6 +28,6 @@
     }
   ],
   "action": {
-    "default_title": "Speak to unlock: Focus - Site Blocker - No Distractions - Productivity"
+    "default_title": "Talk to unlock: Focus - Site Blocker - No Distractions - Productivity"
   }
 }
