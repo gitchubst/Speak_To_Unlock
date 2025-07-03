@@ -27,7 +27,7 @@
 
         const title = document.createElement('h1');
         title.id = 'mindful-blocker-title';
-        title.textContent = 'Speak to Unlock';
+        title.textContent = 'Talk to Unlock';
 
         const message = document.createElement('p');
         message.id = 'mindful-blocker-message';
@@ -35,11 +35,11 @@
 
         const status = document.createElement('p');
         status.id = 'mindful-blocker-status';
-        status.textContent = 'Click the button and speak';
+        status.textContent = 'Click the button and talk';
 
         const speakButton = document.createElement('button');
         speakButton.id = 'mindful-blocker-speak-button';
-        speakButton.textContent = 'Speak';
+        speakButton.textContent = 'Talk';
         speakButton.onclick = startRecognition;
 
         const settingsButton = document.createElement('button');
@@ -200,7 +200,7 @@
     function resetSpeakButton() {
         const speakButton = document.getElementById('mindful-blocker-speak-button');
         if (speakButton) {
-            speakButton.textContent = 'Speak';
+            speakButton.textContent = 'Talk';
             speakButton.disabled = false;
             speakButton.classList.remove('recording');
         }
@@ -266,7 +266,7 @@
                         status.textContent = `You said: "${spokenPhrase}". Incorrect phrase. Try again.`;
                         resetSpeakButton();
                     } else {
-                        status.textContent = `Please speak louder. Your level was ${audioLevel}/${requiredLevel}. Try again.`;
+                        status.textContent = `Please talk louder. Your level was ${audioLevel}/${requiredLevel}. Try again.`;
                         resetSpeakButton();
                     }
                 };
@@ -285,7 +285,7 @@
                     stopRecognitionAndAudio();
                     if (!recognitionSucceeded) {
                         if(status.textContent === 'Listening') {
-                            status.textContent = 'Click the button and speak.';
+                            status.textContent = 'Click the button and talk.';
                         }
                         resetSpeakButton();
                     }
