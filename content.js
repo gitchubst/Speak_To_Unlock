@@ -1,6 +1,6 @@
 (function() {
     let requiredPhrase = "I'm an addict";
-    let requiredLevel = 50;
+    let requiredLevel = 25;
     let blockedSites = [];
     let recognition;
     let audioContext;
@@ -313,7 +313,7 @@
         chrome.storage.local.get(['blockedSites', 'requiredPhrase', 'requiredLevel'], (data) => {
             blockedSites = data.blockedSites || [];
             requiredPhrase = data.requiredPhrase || "I'm an addict";
-            requiredLevel = data.requiredLevel || 50;
+            requiredLevel = data.requiredLevel || 25;
 
             if (blockedSites.includes(currentHostname)) {
                 createBlockerUI();
